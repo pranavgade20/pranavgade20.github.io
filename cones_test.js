@@ -12,11 +12,11 @@ function setup(){
   dialog = createP('Are the colours different?');
 
   next = createButton('No');
-  next.position(10, 540);
+  next.position(10, 575);
   next.mousePressed(changeCol);
 
   skip = createButton('Yes');
-  skip.position(300, 540);
+  skip.position(300, 575);
   skip.mousePressed(nextCol);
 
 
