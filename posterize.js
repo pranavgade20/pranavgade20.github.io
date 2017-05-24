@@ -11,6 +11,6 @@ function setup(){
 }
 
 function draw(){
-   filter(POSTERIZE, 3);
+   capture.filter(POSTERIZE, 3);
    image(capture, 0, 0, capture.width, capture.height);
 }
