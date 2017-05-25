@@ -2,8 +2,8 @@ var balls = [null];
 var n = 50;
 
 function setup(){
-   createCanvas(500, 500);
-   background(200);
+   createCanvas(windowWidth, windowHeight);
+   background(60, 100, 70);
    colorMode(HSB, 100);
    
    for(var i = 0; i < n; i++){
@@ -12,7 +12,7 @@ function setup(){
 }
 
 function draw(){
-   background(100, 20);
+   background(60, 100, 70, 20);
    
    for(var i = 0; i < n; i++){
       balls[i].update();
