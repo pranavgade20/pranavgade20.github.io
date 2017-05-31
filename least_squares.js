@@ -12,6 +12,15 @@ function setup(){
 function draw(){
    background(95, 154, 76);
 
+   //A grid to make it fancier
+   stroke(170, 255, 0);
+   for (var i = 0; i < width; i+=20) {
+      line(i, 0, i, height);
+   }
+   for (var i = 0; i < height; i+=20) {
+      line(0, i, width, i);
+   }
+
    var xMean = xSum/xVals.length;
    var yMean = ySum/yVals.length;
    var numer = 0;
@@ -46,9 +55,10 @@ function draw(){
       errSum += (yVals[i] -(m*xVals[i] + b)) * (yVals[i] -(m*xVals[i] + b));
    }
    errSum /= xVals.length;
-   stroke(170, 255, 0);
+   stroke(255, 117, 26);
    strokeWeight(1);
-   text(round(errSum), 20, 20);
+   textSize(15);
+   text('Error Rate:'+round(errSum/1000)+'%', 35, 35);
 }
 
 function mousePressed(){
