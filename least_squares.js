@@ -13,7 +13,7 @@ function draw(){
    background(95, 154, 76);
 
    //A grid to make it fancier
-   stroke(170, 255, 0);
+   stroke(89, 179, 0);
    for (var i = 0; i < width; i+=20) {
       line(i, 0, i, height);
    }
