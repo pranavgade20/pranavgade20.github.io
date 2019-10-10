@@ -1,80 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
- <title>My JS Programs</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <style type="text/css">
-    body{
-      background-color: rgb(252, 240, 207);
-    }
-    div{
-      background-color: lightblue;
-      text-align: center;
+    <head>
 
-    }
-    .row{
-      background-color: lightblue;
-    }
- </style>
-</head>
+        <!-- meta data & title -->
+        <meta charset="utf-8">
+        <title>My Projects!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A website for my projects!">
+        <meta name="author" content="Pranav Gade">
 
-<body>
-   <p>
-       Here are some of my programs, written in <b>Javascript</b>, using the p5.js library!
-   </p>
-   <div class="container-fluid">
-      <a href  = "bouncy_balls/index.html">
-        <div class="row">
-          <h5>Bouncing Balls.</h5>
-          <img src="bouncy_balls/grab.gif" alt="Screenshot "height="320" width="320" align="centre">
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+    </head>
+  <body>
+
+    <!-- Header -->
+        
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/pranavgade20/pranavgade20.github.io/">Source</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </a>
-      <hr>
-      <a href  = "circles/index.html">
-         <div class="row">
-          <h5>A LOT of Circles.</h5>
-          <img src="circles/grab.gif" alt="Screenshot "height="320" width="320" align="centre">
-         </div>
-      </a>
-      <hr>
-      <a href  = "cones_test/index.html">
-          <div class="row">
-            <h5>Test your eyes!</h5>
-            <img src="cones_test/grab.gif" alt="Screenshot "height="320" width="320" align="centre">
-          </div>
-      </a>
-      <hr>
-      <a href  = "hexes/index.html">
-         <div class="row">
-           <h5>Rainbow coloured Hexagons</h5>
-           <img src="hexes/grab.gif" alt="Screenshot "height="320" width="320" align="centre">
-         </div>
-      </a>
-      <hr>
-      <a href  = "liss_curve/index.html">
-         <div class="row">
-           <h5>The Lissajous curve</h5>
-           <img src="liss_curve/grab.gif" alt="Screenshot" height="320" width="320" align="centre">
-         </div>
-      </a>
-      <hr>
-      <a href  = "phyllo_patterns/index.html">
-         <div class="row">
-           <h5>Phyllotaxical patterns.</h5>
-           <img src="phyllo_patterns/grab.gif" alt="Screenshot" height="320" width="320" align="centre">
-         </div>
-     </a>
-   </div>
-   <hr>
-   <hr>
- 
-   <div class="row">
-     <a href="part_2.html">Part 2-Deep Learning</a>
-   </div>
+    </nav>
+    <!-- End Header -->
 
-   <p>
-      I hope you like them. Feel free to mail me at pranavgade20@gmail.com.
-   </p>
-</body>
+    <!-- Begin #services-section -->
+    <section id="services" class="services-section section-global-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="services-header">
+                    <h3 class="services-header-title">My Projects</h3>
+                    <p class="services-header-body"><em> These are some of my projects made over the years.</em>  </p><hr>
+                </div>
+            </div>
+      
+            <!-- Begin Services Row 1 -->
+            <div class="row services-row services-row-head services-row-1">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40" style="cursor: pointer;" onclick="window.location='/projects/phyllo_patterns/sketch.html';">
+                        <img src="projects/phyllo_patterns/grab.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Phyllotaxical Patterns</h4>
+                        <p class="services-body">May 19, 2017</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='/projects/liss_curve/sketch.html';">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                    	<img src="projects/liss_curve/screen.png" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Lissajous curves</h4>
+                        <p class="services-body">May 19, 2017</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='/projects/rose_1/sketch.html';">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <img src="projects/rose_1/grab.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Rose Patterns 1</h4>
+                        <p class="services-body">May 19, 2017</p>
+                    </div>        
+                </div>
+            </div>
+            <!-- End Serivces Row 1 -->
+      
+            <!-- Begin Services Row 2 -->
+            <div class="row services-row services-row-tail services-row-2">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='/projects/rose_2/sketch.html';">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+                        <img src="projects/rose_2/grab.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Rose Patterns 1</h4>
+                        <p class="services-body">May 19, 2017</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='/projects/circles/sketch.html';">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                        <img src="projects/circles/grab.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Circles, Circles</h4>
+                        <p class="services-body">This is my first JS project.</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='https://github.com/pranavgade20/android10-game';">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <img src="/projects/processing/android_10.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Android 10 Game</h4>
+                        <p class="services-body">An implementation of the android 10 easter egg game of picross in Processing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Serivces Row 2 -->
+
+            <!-- Begin Services Row 3 -->
+            <div class="row services-row services-row-tail services-row-2">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='/projects/rose_2/sketch.html';">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+                        <img src="projects/rose_2/grab.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Rose Patterns 1</h4>
+                        <p class="services-body">May 19, 2017</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='/projects/circles/sketch.html';">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                        <img src="projects/circles/grab.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Circles, Circles</h4>
+                        <p class="services-body">This is my first JS project.</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="cursor: pointer;" onclick="window.location='https://github.com/pranavgade20/Processing/tree/master/snake';">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <img src="/projects/processing/snake.gif" style="width: 100%; height: auto;">
+                        <h4 class="services-title">Snake Game</h4>
+                        <p class="services-body">The classic Snake game in Processing!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Serivces Row 3 -->
+    
+        </div>      
+    </section>
+    <!-- End #services-section -->
+
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+                    <p class="footer-contact">
+                        Email: pranavgade20@gmail.com<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-external-link"></i> Links</h3>
+                    <p> <a href="https://github.com/pranavgade20/pranavgade20.github.io/"> Source </a></p>
+                </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> Socialize</h3>
+                <div id="social-icons">
+                      <a href="#" class="btn-group twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                      <a href="#" class="btn-group facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+              </div>    
+        </div>
+      </div>
+    </footer>    
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
