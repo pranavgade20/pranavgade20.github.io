@@ -1,7 +1,7 @@
 <html>
 
 <head>
-
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <title>This page is a quine.</title>
 
 </head>
@@ -25,7 +25,7 @@
 
 <p>I also reverse engineer software and love taking part in CTFs. Like picoCTF 2019, where my team was ranked 52nd out of 15817</p>
 
-<p>One of my hobbies is making procedural digital art. Click here to awe at some of my best efforts.</p>
+<p>One of my hobbies is making procedural digital art. You can awe at some of my best efforts here.</p>
 
 <p>I also do just enough Competitive Programming to qualify for INOI(Indian National Informatics Olympiad), the precursor to IOI(International Olympiad in Informatics)</p>
 
@@ -39,13 +39,14 @@
 <p>But how does it work? Well, this page uses a bunch of weird HTML and CSS tricks to insert the tags, as well as hide them. Click here for an in-depth technical description.</p>
 <style>* { display:block; font-family:Monospace; margin:0.4em; padding:0; text-decoration:none} a,code,em,strong {display:inline} </style>
 <style> style, blockquote { white-space: pre-wrap;}</style>
-<style> html::before{content:'<html>'} html::after {content:'<\/html>'}head::before{content:'<head>'}head::after {content:'<\/head>'}p::before {content:'<p>'}p:after {content:'</p>'}title::before {content:'<title>'}title::after {content:'<\/title>'}body::before {content:'<body>'}body::after {content:'<\/body>'}h1::before {content:'<h1>'}h1::after {content:'<\/h1>'}h2::before {content:'<h2>'}h2::after {content:'<\/h2>'}p::before {content:'<p>'}p::after {content:'<\/p>'}pre::before {content:'<pre>'}pre::after {content:'<\/pre>'}code::before {content:'<code>'}code::after {content:'<\/code>'}a::before {content:'<a>'}a::after {content:'<\/a>'}aside::before {content:'<aside>'}aside::after {content:'<\/aside>'}blockquote::before {content:'<blockquote>'}blockquote::after {content:'<\/blockquote>'}em::before {content:'<em>'}em::after {content:'<\/em>'}strong::before {content:'<strong>'}strong::after {content:'<\/strong>'}</style>
+<style> html::before{content:'<html>'} html::after {content:'<\/html>'}head::before{content:'<head>'}head::after {content:'<\/head>'}p::before {content:'<p>'}p:after {content:'</p>'}title::before {content:'<title>'}title::after {content:'<\/title>'}body::before {content:'<body>'}body::after {content:'<\/body>'}h1::before {content:'<h1>'}h1::after {content:'<\/h1>'}h2::before {content:'<h2>'}h2::after {content:'<\/h2>'}h3::before {content:'<h3>'}h3::after {content:'<\/h3>'}p::before {content:'<p>'}p::after {content:'<\/p>'}pre::before {content:'<pre>'}pre::after {content:'<\/pre>'}code::before {content:'<code>'}code::after {content:'<\/code>'}a::before {content:'<a>'}a::after {content:'<\/a>'}aside::before {content:'<aside>'}aside::after {content:'<\/aside>'}blockquote::before {content:'<blockquote>'}blockquote::after {content:'<\/blockquote>'}em::before {content:'<em>'}em::after {content:'<\/em>'}strong::before {content:'<strong>'}strong::after {content:'<\/strong>'}</style>
 <style>a[href]::before {content: "<a href='" attr(href) "'>"}</style>
 <style>style::before {content:'<style>'}style::after {content:'<\/style>'}</style>
-<style>*::before,*::after {color:rgba(136, 18, 128, 0.5);font-weight:100;font-size:0.8em;user-select: text; -moz-user-select: text;}style::first-line {font-size: 0; line-height: 0}</style>
+<style>*::before,*::after {color:#6699cc;font-weight:100;font-size:0.8em;user-select: text; -moz-user-select: text;}style::first-line {font-size: 0.0em; line-height: 0}</style>
+<style>meta::before{content:'<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">'}</style>
 
 
-<style>html {max-width:70ch;padding:2ch;margin:auto;color:#333;font-size:1.2em;}</style>
+<style>html {max-width:90ch;padding:1ch;margin:auto;color:#333;font-size:1.2em;}</style>
 
 </body>
 </html>
