@@ -1,0 +1,216 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{darkblue}{HTML}{000040}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=darkblue,
+}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\orignalResumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    { #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\sresumeItem}[1]{
+  \item\small{
+    { #1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumePara}[1]{
+  \item\small{
+    { #1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\shortResumeSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\orignalResumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://pranavgade20.github.io/}{\Large Pranav Gade}} & Email : \href{mailto:pranavgade20@gmail.com}{pranavgade20@gmail.com}\\
+  \href{http://pranavgade20.github.io/}{pranavgade20.github.io} & Location : Mumbai, India \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology}{Lucknow, India}
+      {Bachelor of Technology in Computer Science and Artificial Intelligence}{Dec. 2020-present}
+    \resumeSubheading
+      {Rao Junior College of Science}{Andheri, Mumbai, India}
+      {Higher Secondary Certificate; Percentage:83.5\%}{Apr. 2020}
+    \resumeSubheading
+      {Ryan International School}{Kharghar, Mumbai, India}
+      {Indian Certificate of Secondary Education;  Percentage:93.5\%}{May. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS AND ACHIEVEMENTS-----------------
+\section{Achievements \& Awards}
+  \resumeSubHeadingListStart
+
+    \shortResumeSubheading
+      {Google Code-in 2018 Grand Prize Winner}{2018}
+      \resumeItemListStart
+        \sresumeItem
+          {\href{http://g.co/gci/}{Google Code-in} is a contest by Google to encourage participation in open-source software. I completed 34 tasks in the contest and was selected as the Grand Prize winner by \href{https://kde.org/}{KDE Community}.}
+        \sresumeItem
+          {As a part of the prize, I got a week long all-expenses paid trip with a parent to Google's Headquarters in Mountain View, California.}
+      \resumeItemListEnd
+
+    \shortResumeSubheading
+      {Ranked 52 out of 15817 globally in PicoCTF}{2019}
+      \resumeItemListStart
+        \sresumeItem
+          {CTFs are cybersecurity competitions consisting of a series of challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge. PicoCTF is a contest organised by security experts at Carnegie Mellon University.}
+        \sresumeItem
+          {I was ranked 52nd out of 15817 among high school and college students from around the world.}
+      \resumeItemListEnd
+
+    \shortResumeSubheading
+      {Selected for INOI}{2019}
+      \resumeItemListStart
+        \sresumeItem
+          {Indian National Informatics Olympiad(INOI) is the precursor to the International Olympiad in Informatics(IOI)}
+        \sresumeItem
+          {I scored 110 points out of 200, and was selected since the cutoff was 0 points.}
+      \resumeItemListEnd
+
+      \shortResumeSubheading
+      {Qualified in KVPY}{2018}
+      \resumeItemListStart
+        \sresumeItem
+          {The Kishore Vaigyanik Protsahan Yojana (KVPY) is a fellowship program initiated and funded by the Department of Science and Technology, Government of India, to attract exceptionally highly motivated students for pursuing basic science courses and research career in science.}
+        \sresumeItem
+          {I was short-listed from almost 50,000 students to apperar for an interview which is the final stage of the selection procedure.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Extracurriculars}
+  \resumeSubHeadingListStart
+    \item{\textbf{Representing my School in Quiz contests}{: I have led my School team in in various City, State, and National level Quiz competitions organised by TCS, IIT-Bombay, The Times of India, Podar Group, and Bourn Vita, among many others.}}
+    \vspace{-8pt}
+    \item{\textbf{School Council President}{: I was elected as the School Council President for the academic year 2019-20.}}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/pranavgade20/jLHS}{jLHS}:}
+      {\vspace{-2pt}  jLHS fast and tiny HTTP server written in Java without any external dependencies}
+    \resumeSubItem{\href{https://github.com/pranavgade20/jLHS}{FabricHax}:}
+	  {\vspace{-2pt}  A minecraft mod to automate repetitive tasks}
+    \resumeSubItem{PhonePut:}
+      {\vspace{-2pt} An android application that turns your device into a trackpad for your computer}
+    \resumeSubItem{SubPlain player:}
+      {\vspace{-2pt} A video player that explains explains what the subtitles mean to those who are new to the language}
+    \resumeSubItem{Family Tree app:}
+      {\vspace{-2pt} An android application to collaborate to explore your family tree}
+    \resumeSubItem{\href{https://phabricator.kde.org/source/networkmanager-qt/}{networkmanager-qt}:}
+      {\vspace{-2pt} NetworkManagerQt provides access to all NetworkManager features exposed to DBus API}
+   \resumeSubItem{\href{https://invent.kde.org/education/mark}{marK}:}
+      {\vspace{-2pt} A machine learning dataset annotation tool which allows users to annotate multiple types of data}
+    \resumeSubItem{My website:}
+      {\vspace{-2pt} \href{http://pranavgade20.github.io/}{pranavgade20.github.io}}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming Languages/Frameworks}{: Java, C++, C, Python, Javascript/NodeJS, Rust, 8085 Assembly, x86 Assembly, BASH Scripting, Kotlin, Processing3, p5js, Spigot/CraftBukkit, FabricMC}
+   }
+    \item{
+      \vspace{-8pt}
+      \textbf{3D Modelling/Design}{: Blender, Inkscape, GIMP, ffmpeg}
+    }
+    \item{
+      \vspace{-8pt}
+      \textbf{Reverse Engineering/Information Security}{: Ghidra, Radare2, Android Studio, GDB, Wireshark}
+    }
+    \item{
+      \vspace{-8pt}
+      \textbf{Other Software}{: Linux, Git/Mercurial, Vim, Android Studio, Heroku, MongoDB, Regex, JSON, Latex}
+    }
+
+ \resumeSubHeadingListEnd
+
+
+% -------------------------------------------
+\end{document}
