@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>ctf on Pranav&#39;s Blog</title>
+    <link>https://pranavgade20.github.io/blog/categories/ctf/</link>
+    <description>Recent content in ctf on Pranav&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>pranavgade20@gmail.com (Pranav Gade)</managingEditor>
+    <webMaster>pranavgade20@gmail.com (Pranav Gade)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://pranavgade20.github.io/blog/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>TrollcatCTF Writeup</title>
+        <link>https://pranavgade20.github.io/blog/posts/trollcatctf-21-writeup/</link>
+        <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+        <author>pranavgade20@gmail.com (Pranav Gade)</author>
+        <atom:modified>Sat, 08 Feb 2020 00:00:00 +0000</atom:modified>
+        <guid>https://pranavgade20.github.io/blog/posts/trollcatctf-21-writeup/</guid>
+        <description>I participated in TrollCAT CTF with my team, Pwnzorz, this weekend, and we placed 2nd! Considering that this was our first CTF in quite a while, we did really well, thanks to my amazing teammates Aayushman, Nils, and Uzay-G. Here are the writeups for the challenges I completed.
+Reversing - Solver The challenge, archived here, says can you guess the password? and gives you a binary to reverse. Using ghidra, we get the following disassembly:</description>
+        
+        <dc:creator>Pranav Gade</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>writeup</category>
+            
+          
+            
+              <category>ctf</category>
+            
+          
+        
+        
+          
+            
+              <category>ctf</category>
+            
+          
+        
+        
+          
+            
+              <category>CTF Writeups</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
