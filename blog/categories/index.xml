@@ -14,19 +14,19 @@
     <managingEditor>pranavgade20@gmail.com (Pranav Gade)</managingEditor>
     <webMaster>pranavgade20@gmail.com (Pranav Gade)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://pranavgade20.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
-        <title>ctf</title>
-        <link>https://pranavgade20.github.io/blog/categories/ctf/</link>
-        <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+        <title>writeup</title>
+        <link>https://pranavgade20.github.io/blog/categories/writeup/</link>
+        <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
         <author>pranavgade20@gmail.com (Pranav Gade)</author>
         
-        <guid>https://pranavgade20.github.io/blog/categories/ctf/</guid>
+        <guid>https://pranavgade20.github.io/blog/categories/writeup/</guid>
         <description></description>
         
         <dc:creator>Pranav Gade</dc:creator>
