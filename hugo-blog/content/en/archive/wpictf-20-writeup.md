@@ -1,7 +1,7 @@
 ---
 title: WpiCTF Writeup
 date: 2020-04-21
-description: Writeup for trollcat CTF from 6th Feb, 2021
+description: Writeup for WpiCTF from 21st Arp, 2020 
 draft: false
 hideToc: false
 enableToc: true
