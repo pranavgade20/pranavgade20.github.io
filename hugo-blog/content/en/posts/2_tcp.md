@@ -1,6 +1,6 @@
 ---
 title: An intro to TCP
-date: 2021-02-21
+date: 2021-04-05
 description: A brief introduction to the Transmission Control Protocol
 draft: false
 hideToc: false
