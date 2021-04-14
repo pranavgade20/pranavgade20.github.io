@@ -1,6 +1,6 @@
 logoText = "Pranav's Blog"
 logoType = "short" # long, short
-description = "A place for my random rants."
+description = "Hello, World!"
 custom_css = []
 custom_js = []
 useFaviconGenerator = true # https://www.favicon-generator.org/

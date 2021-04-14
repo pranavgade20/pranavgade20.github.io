@@ -27,7 +27,7 @@ header:
     title:
       - Pranav's Blog
     subtitle:
-      - A place for my random rants
+      - Hello, World! 
     titleColor: 
     titleShadow: true
     titleFontSize: 44
