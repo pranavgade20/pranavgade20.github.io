@@ -18,6 +18,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{tikz}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -92,6 +94,26 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -100,8 +122,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://pranavgade20.github.io/}{\Large Pranav Gade}} & Email : \href{mailto:pranavgade20@gmail.com}{pranavgade20@gmail.com}\\
-  \href{http://pranavgade20.github.io/}{pranavgade20.github.io} & Location : Mumbai, India \\
+  \textbf{\href{http://pranavg.me/}{\Large Pranav Gade}} & Email: \href{mailto:pranavgade20@gmail.com}{pranavgade20@gmail.com}\\
+  \href{http://pranavg.me/}{pranavg.me} & LinkedIn: \href{http://www.linkedin.com/in/pranav-gade/}{linkedin.com/in/pranav-gade} \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -109,7 +131,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indian Institute of Information Technology}{Lucknow, India}
-      {Bachelor of Technology in Computer Science and Artificial Intelligence}{Dec. 2020 - present}
+      {Bachelor of Technology in Computer Science and Artificial Intelligence; Current GPA: 9.53}{Dec. 2020 - present}
     \resumeSubheading
       {Rao Junior College of Science}{Andheri, Mumbai, India}
       {Higher Secondary Certificate; Percentage: 83.5\%}{Apr. 2020}
@@ -128,6 +150,7 @@
         \sresumeItem{Worked on QuantCo's internal toolchain for evaluating SQL databases performance for data science.}
         \sresumeItem{Containerized the benchmarker and deployed it to Google Kubernetes Engine.}
         \sresumeItem{Added support for and evaluated Microsoft SQL server, Snowflake, PostgreSQL and BigQuery databases.}
+        \sresumeItem{Designed and developed QuantCo's engineering hiring challenge, \href{https://challenge.quantco.com}{challenge.quantco.com}}
       \resumeItemListEnd
     \resumeSubheading
       {KDE Community}{}
@@ -143,6 +166,15 @@
   \resumeSubHeadingListStart
 
     \shortResumeSubheading
+      {Ranked 52 out of 15817 globally in PicoCTF}{2019}
+      \resumeItemListStart
+        \sresumeItem
+          {CTFs are cybersecurity competitions consisting of a series of challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge. PicoCTF is a contest organised by security experts at Carnegie Mellon University.}
+        \sresumeItem
+          {My team was ranked 52nd out of 15817 among high school and college students from around the world.}
+      \resumeItemListEnd
+
+    \shortResumeSubheading
       {Google Code-in 2018 Grand Prize Winner}{2018}
       \resumeItemListStart
         \sresumeItem
@@ -151,16 +183,7 @@
           {As a part of the prize, I got a week long all-expenses paid trip with a parent to Google's Headquarters in Mountain View, California.}
       \resumeItemListEnd
 
-    \shortResumeSubheading
-      {Ranked 52 out of 15817 globally in PicoCTF}{2019}
-      \resumeItemListStart
-        \sresumeItem
-          {CTFs are cybersecurity competitions consisting of a series of challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge. PicoCTF is a contest organised by security experts at Carnegie Mellon University.}
-        \sresumeItem
-          {My team was ranked 52nd out of 15817 among high school and college students from around the world.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------------
 \section{Projects}
@@ -170,11 +193,11 @@
     \resumeSubItem{\href{https://github.com/pranavgade20/FabricHax}{FabricHax}:}
 	  {\vspace{-2pt}  A minecraft mod to automate repetitive tasks}
     \resumeSubItem{PhonePut:}
-      {\vspace{-2pt} An android application that turns your device into a trackpad for your computer}
+      {\vspace{-2pt} An android application that turns your device into an input device for your computer}
     \resumeSubItem{SubPlain player:}
       {\vspace{-2pt} A video player that explains explains what the subtitles mean to those who are new to the language}
-    \resumeSubItem{Family Tree app:}
-      {\vspace{-2pt} An android application to collaborate to explore your family tree}
+    \resumeSubItem{\href{https://github.com/pranavgade20/htcpcp-impl}{htcpcp-impl}:}
+      {\vspace{-2pt} Implementation of rfc2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)}
     \resumeSubItem{\href{https://phabricator.kde.org/source/networkmanager-qt/}{networkmanager-qt}:}
       {\vspace{-2pt} NetworkManagerQt provides access to all NetworkManager features exposed to DBus API}
    \resumeSubItem{\href{https://invent.kde.org/education/mark}{marK}:}
@@ -188,11 +211,11 @@
 \section{Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Programming Languages/Frameworks}{: Java, C++, C, Python, Javascript/NodeJS, Rust, 8085 Assembly, x86 Assembly, BASH Scripting, Kotlin, Processing3, p5js, Spigot/CraftBukkit, FabricMC}
+     \textbf{Programming Languages/Frameworks}{: Java, Python, C++, C, javascript/NodeJS, Bash Scripting, Rust, R, Haskell, 8085 Assembly, x86 Assembly, Kotlin, Groovy}
    }
     \item{
       \vspace{-8pt}
-      \textbf{3D Modelling/Design}{: Blender, Inkscape, GIMP, ffmpeg}
+      \textbf{3D Modeling/Design}{: Blender, Inkscape, GIMP, ffmpeg, imagemagik}
     }
     \item{
       \vspace{-8pt}
@@ -200,11 +223,39 @@
     }
     \item{
       \vspace{-8pt}
-      \textbf{Other Software}{: Docker, Kubernetes, Linux, Git/Mercurial, Vim, Android Studio, Heroku, MongoDB, Regex, JSON, Latex}
+      \textbf{Other Software}{: Linux, Docker, Kubernetes, Google Cloud, git/mercurial, Gradle, vim, Android Studio, PostgreSQL, Snowflake, MongoDB, Regex, JSON, Latex}
     }
 
  \resumeSubHeadingListEnd
-
+% --------CERTIFICATIONS------------
+\section{Certifications}
+ \resumeSubHeadingListStart
+    \item{ Data Manipulation with pandas (\href{https://www.datacamp.com/statement-of-accomplishment/course/c3cae0f7b7d90d771648d8a8131bcf6f89244ac4}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Joining Data with pandas (\href{https://www.datacamp.com/statement-of-accomplishment/course/dee3f4421ac08c1110debce76075b64f459ca87f}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Intermediate Data Visualization with Seaborn (\href{https://www.datacamp.com/statement-of-accomplishment/course/60adfd9e15773b819e894fd4ef5ba909d473895d}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Dealing with Missing Data in Python (\href{https://www.datacamp.com/statement-of-accomplishment/course/c3719df39a99d13e42ea130bc3a180905108a7f2}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Reshaping Data with pandas (\href{https://www.datacamp.com/statement-of-accomplishment/course/42466ede406d1e300d2d8eb5ada702c8caf1ca8f}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Working with Categorical Data in Python (\href{https://www.datacamp.com/statement-of-accomplishment/course/8799953c1b77b64b66dffd26369d8a46c98e8519}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Introduction to R for Finance (\href{https://www.datacamp.com/statement-of-accomplishment/course/96615c5d2125bbdb77e1418b1dbe7758fa25c81e}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Intermediate R for Finance (\href{https://www.datacamp.com/statement-of-accomplishment/course/53ec2bcd5e2320ce0abdc9c542921bd625afd7ea}{DataCamp$^{\ExternalLink}$})}
+    \item{\vspace{-8pt} Manipulating Time Series Data with xts and zoo in R (\href{https://www.datacamp.com/statement-of-accomplishment/course/202b9030fb2ab578d1fd1025077be417255d1079}{DataCamp$^{\ExternalLink}$})}
+ \resumeSubHeadingListEnd
+% --------COURSES------------
+\section{Courses}
+\textbullet \ Advanced Programming Language
+\textbullet \ Calculus
+\textbullet \ Data Communications
+\textbullet \ Data Structures
+\textbullet \ Discrete Mathematics
+\textbullet \ Fundamentals of Electronics Engineering
+\textbullet \ Introduction to Programming
+\textbullet \ Linear Algebra and Ordinary Differential Equations
+\textbullet \ Object Oriented Methodology
+\textbullet \ Optimization Techniques
+\textbullet \ Probability and Statistics
+\textbullet \ Theory of Automata
+\textbullet \ System Management
+\textbullet \ Professional Communication
 
 % -------------------------------------------
 \end{document}
