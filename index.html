@@ -1,7 +1,6 @@
 <html>
 
 <head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <title>This page is a quine.</title>
 
 </head>
@@ -12,25 +11,30 @@
 
 <p>And this page is a quine. What is that? Well, a quine is a program that produces its source code as its output.</p>
 
-<p>But beforeI tell you more about that, here is a bit about me:</p>
+<h3>About me</h3>
 
-<p>I am a 18y.o. student, currently pursuing B.Tech. CS&AI(Bachelor of Technology in Computer Science and Artificial Intelligence) at IIIT-L(Indian Institute of Information Technology, Lucknow). You can find my resume <a href="pranav-gade-resume.pdf">here</a></p>
+<p>I am a 19y.o. student, currently pursuing B.Tech. CS&AI(Bachelor of Technology in Computer Science and Artificial Intelligence) at Indian Institute of Information Technology, Lucknow. You can find my resume <a href="pranav-gade-resume.pdf">here</a></p>
 
-<p>I started exploring computers when I was 7, when I got my hands on a QBASIC manual. I have loved programming and computers ever since. Nowadays, I like Java programming and am exploring networking and minecraft modding.</p>
+<p>I started exploring computers when I was 7, when I got my hands on a QBASIC manual. I have loved programming and computers ever since.</p>
 
 <p>I was a Google Code-in 2018 Grand Prize winner for my contributions to KDE Community, and was invited to visit Google's HQ in California!</p>
 
 <p>I am a FOSS evangelist, and therefore a Linux user(i use arch btw :p)</p>
 
-<p>I am kinda lazy, and love automating stuff, like <a href="https://github.com/pranavgade20/FabricHax">this minecraft mod</a> that makes your life easier.</p>
+<p>I work with whatever gets the job done, but I prefer to prefer to stay on the server's side.</p>
+<h3>Projects & Experience</h3>
 
-<p>I love to code useful apps, and participating in hackathons like PennApps.</p>
+<p>I was a SDE intern at <a href="http://quantco.com">QuantCo</a> Zurich in summer 2021. I worked on QuantCo's internal toolchain for evaluating SQL databases' performance for data science.</p>
+
+<p>Right now, I am working on writing <a href="https://github.com/pranavgade20/jLHS">a fast & tiny HTTP server</a> in Java.</p>
+
+<p>I am kindof lazy, and love automating stuff, like <a href="https://github.com/pranavgade20/FabricHax">this minecraft mod</a> that makes your life easier.</p>
+
+<p>I love to make useful apps, and participating in hackathons like PennApps.</p>
 
 <p>I also reverse engineer software and love taking part in CTFs. Like picoCTF 2019, where my team was ranked 52nd out of 15817</p>
 
 <p>One of my hobbies is making procedural digital art. You can find some of my best efforts <a href="art/art.html">here</a>.</p>
-
-<p>I don't really like Competitive Programming, but I had qualified for INOI(Indian National Informatics Olympiad), the precursor to IOI(International Olympiad in Informatics)</p>
 
 <p>I like making quirky stuff like <a href="">this website</a>(it is a quine), and recursion ;p</p>
 
@@ -39,6 +43,7 @@
 <br>
 
 <h3>Reach out to me:</h3>
+
 <table>
 	<tr>
 		<td>Email:<a href="mailto:pranavgade20@gmail.com"> pranavgade20@gmail.com </a></td>
@@ -49,6 +54,9 @@
 	<tr>
 		<td>GitHub:<a href="https://github.com/pranavgade20"> pranavgade20 </a></td>
 	</tr>
+	<tr>
+		<td>LinkedIn:<a href="https://www.linkedin.com/in/pranav-gade"> linkedin.com/in/pranav-gade </a></td>
+	</tr>
 </table>
 
 <br>
@@ -58,7 +66,7 @@
 <p>This all started from the book Gödel, Escher, Bach: An Eternal Golden Braid, by Douglas Hofstadter. It is a really good book covering a lot of topics, but it was the book that introduced the idea of a 'quine', a program that prints its source code. This page is inspired by<a href="https://youtu.be/gdSlcxxYAA8">this</a>talk by Dylan Beattie.</p>
 <p>But how does it work? Well, this page uses a bunch of weird HTML and CSS tricks to insert the tags, as well as hide them. Here is all the voodoo that makes this possible:</p>
 <p>
-<style>
+<style class="visible">
 html::before{content:'<html>'} html::after{content:'</html>'}
 html{max-width:99ch; padding:1ch; margin:auto; color:#333; font-size:1.2em}
 head::before{content:'<head>'} head::after{content:'</head>'}
@@ -73,13 +81,14 @@ table::before{content:'<table>'} table::after{content:'</table>'}
 tr::before{content:'<tr>'} tr::after{content:'</tr>'}
 td::before{content:'<td>';} td::after{content:'</td>';}
 a[href]::before{content: "<a href='" attr(href) "'>"} a::after{content:'</a>'} a{display:inline; text-decoration:none}
-style::before{content:'<style>'} style::after{content:'<\/style>'}
-style{font-size: 0.4em}
-*::before, *::after{color:#aebfd0; font-weight:100; font-size:0.8em; margin:0.3em}
+style.visible::before{content:'<style>'} style.visible::after{content:'<\/style>'}
+*::before, *::after{color:#aebfd0; font-weight:100; font-size:0.7em; margin:0.3em}
 *{display:block; font-family:Monospace}
+script{display: none;} style{display: none;}
+style.visible{font-size: 0.4em; display: block;}
 </style>
 </p>
-<p>If you are tired of trying to zoom in, or are interested in the technical details, click <a href=" blog/1_quine.html">here</a> for a technical description of how this page works.</p>
+<p>If you don't want to to zoom in, or are interested in the technical details, click <a href="blog/posts/1_quine/">here</a> for a technical description of how this page works.</p>
 <h5>This page works on all browsers, text editors/viewers, and printers. Content first, styles after. Proudly Javascript free.</h5>
 </body>
 </html>
