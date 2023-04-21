@@ -58,12 +58,12 @@ typeIcon = "🎯"
 # whoami
 myname = "Pranav Gade"
 email = "pranavgade20@gmail.com"
-whoami = "Java/Android Developer"
+whoami = "Software Hacker"
 bioImageUrl = ""
 useGravatar = false
 location = "Mumbai, India"
 organization = "Student"
-link = "pranavgade20.github.io"
+link = "pranavg.me"
 
 # sidebar
 enableBio = true
