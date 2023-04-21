@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "default_locale": "en",
   "description": "My blog for my random ideas",
-  "start_url": "https://pranavgade20.github.io/blog",
+  "start_url": "https://pranavg.me/blog",
   "icons": [
     {
       "src": "favicon/android-icon-36x36.png",
