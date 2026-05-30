@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Privacy Policy &mdash; gsuite-mcp</title>
+<title>Privacy Policy</title>
 <meta charset="utf-8">
 </head>
 
@@ -9,53 +9,31 @@
 
 <h1>Privacy Policy</h1>
 
-<p>This privacy policy covers <a href="https://github.com/pranavgade20/gsuite-mcp">gsuite-mcp</a>, an open-source Model Context Protocol (MCP) server that lets a user's local AI client (e.g. Claude Code) access their own Gmail and Google Calendar. It is published and maintained by Pranav Gade.</p>
+<p>This privacy policy covers personal apps and tools published by Pranav Gade at <a href="https://pranavg.me">pranavg.me</a>, including any apps that use Google Sign-In or call Google APIs on a user's behalf ("the apps").</p>
 
 <p>Last updated: 2026-05-30.</p>
 
-<h3>What gsuite-mcp is</h3>
+<h3>What the apps do with your data</h3>
 
-<p>gsuite-mcp runs entirely on the user's own machine. It is a local process launched by the user's MCP client over stdio. It has no server-side component, no hosted backend, and no telemetry. There is no "gsuite-mcp service" that receives or stores user data.</p>
+<p>The apps access your data only with your explicit authorization, and only the scopes you grant. Data accessed via Google APIs is used solely to provide the user-facing features you invoke. It is not transmitted to any third party, not used for advertising, not used for analytics or profiling, and not used to train any machine learning model.</p>
 
-<h3>What data is accessed</h3>
+<p>Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-<p>When the user authorizes the app, gsuite-mcp obtains an OAuth 2.0 access token and refresh token for the Google account the user selects. With those tokens it can call the Gmail API and the Google Calendar API on the user's behalf, scoped to:</p>
+<h3>Storage</h3>
 
-<ul>
-<li><code>https://www.googleapis.com/auth/gmail.modify</code> &mdash; read, draft, label, and (when the user explicitly enables it via the <code>GMAIL_ENABLE_SEND</code> environment variable) send mail on the user's behalf.</li>
-<li><code>https://www.googleapis.com/auth/calendar</code> &mdash; read and modify the user's calendars and events.</li>
-</ul>
-
-<p>Data is fetched from Google only in response to a tool call initiated by the user (directly or via their AI client). Examples of data that may transit through the local process: message metadata, message bodies, attachments, label lists, calendar events, attendee lists.</p>
-
-<h3>How data is used</h3>
-
-<p>Data fetched from Google is returned to the user's MCP client (the program that launched gsuite-mcp) over the local stdio pipe and is not used for any other purpose. gsuite-mcp does not transmit user data to any third party, does not store user content beyond the lifetime of the request, and does not use user data for advertising, analytics, model training, or any purpose unrelated to providing the user-facing features they invoked.</p>
-
-<p>Use of information received from Google APIs adheres to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-
-<h3>Where data is stored</h3>
-
-<p>The following files are written to the user's machine under <code>~/.config/gmail-mcp/</code> (or the directory pointed to by <code>GMAIL_MCP_CONFIG_DIR</code>), with file mode <code>0600</code>:</p>
-
-<ul>
-<li><code>token.json</code> &mdash; the OAuth access token and refresh token returned by Google.</li>
-<li><code>oauth-client.json</code> &mdash; optional; only present if the user supplied their own OAuth client credentials.</li>
-</ul>
-
-<p>No other files are written by gsuite-mcp. Email content, attachments, and calendar events are streamed to the user's MCP client as they are fetched and are not persisted to disk by gsuite-mcp, except where the user explicitly invokes a tool that writes to a path they specify (for example, <code>gmail_bulk_export</code> or <code>gmail_download_attachments</code>).</p>
+<p>The apps minimize what they store. Where credentials or user content are retained, they are kept locally on the device or environment where the app is run, under access controls appropriate to that environment. The apps do not maintain a central server-side database of user content.</p>
 
 <h3>Sharing</h3>
 
-<p>gsuite-mcp does not share user data with any third party. The only network destinations contacted by gsuite-mcp are Google's own API endpoints (<code>accounts.google.com</code>, <code>oauth2.googleapis.com</code>, <code>gmail.googleapis.com</code>, <code>www.googleapis.com</code>), reached using the user's own access token.</p>
+<p>The apps do not sell, rent, or share your personal information with any third party. Network requests are made only to the providers whose APIs the app is calling (for example, Google), using your own credentials.</p>
 
 <h3>Revoking access</h3>
 
-<p>The user may revoke gsuite-mcp's access at any time from <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>. Deleting <code>~/.config/gmail-mcp/token.json</code> removes the locally cached credentials.</p>
+<p>You can revoke an app's access to your Google account at any time from <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
 
 <h3>Children</h3>
 
-<p>gsuite-mcp is a developer tool and is not directed at children under 13.</p>
+<p>The apps are not directed at children under 13.</p>
 
 <h3>Changes</h3>
 
